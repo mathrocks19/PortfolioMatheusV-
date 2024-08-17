@@ -7,7 +7,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'figtree': ['Figtree', 'sans-serif']
+        'figtree': ['Figtree', 'sans-serif'],
+        'rubik': ['Rubik', 'sans-serif'],
+        'poppins': ['Poppins', 'sans-serif']
       },
     },
   },
