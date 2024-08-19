@@ -3,11 +3,12 @@ import { NavbarComponent } from "../navbar/navbar.component";
 import { HeroComponent } from "../hero/hero.component";
 import { TecnologiasComponent } from "../tecnologias/tecnologias.component";
 import { ProjetosComponent } from "../projetos/projetos.component";
+import { ContatosComponent } from "../contatos/contatos.component";
 
 @Component({
   selector: 'app-pagina-inicial',
   standalone: true,
-  imports: [NavbarComponent, HeroComponent, TecnologiasComponent, ProjetosComponent],
+  imports: [NavbarComponent, HeroComponent, TecnologiasComponent, ProjetosComponent, ContatosComponent],
   templateUrl: './pagina-inicial.component.html',
   styleUrl: './pagina-inicial.component.css'
 })

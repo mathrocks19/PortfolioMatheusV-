@@ -7,3 +7,22 @@
 body{
   cursor: url('assets/cursor/cursorMoon.cur'), auto;
 }
+
+:root {
+  --scrollbar-track-color: rgb(0, 0, 0); /* Fundo totalmente transparente */
+  --scrollbar-thumb-color: cyan; /* Cor do "thumb" */
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Largura do scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track-color);
+  border-radius: 10px; /* Arredondamento dos cantos */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color);
+  border-radius: 10px; /* Arredondamento dos cantos */
+}
