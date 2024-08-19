@@ -2,6 +2,8 @@
   <div class="container mx-auto px-4 py-2">
     <div
       class="flex flex-wrap items-center justify-between p-4 bg-black/80 rounded-2xl shadow-[#2FAD9E] shadow-lg bottom-5 border-[#2FAD9E] border">
+
+      <!-- Título -->
       <button
         class="cursor-pointer select-none text-[2rem] font-bold text-slate-100 relative group text-center flex justify-center">
         <div
@@ -10,24 +12,25 @@
         <div class="absolute top-[5px] text-neutral-700"> Matheus</div>
         <div class="absolute transition duration-300 transform group-hover:translate-y-1 group-active:translate-y-1.5">
           Matheus</div>
-
         <div class="dont-mind-me opacity-0">Matheus</div>
       </button>
 
-
+      <!-- Botões e Menu -->
       <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
         <button
-  class="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-gradient-to-r from-[#007CEF] to-[#54FF65] backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-cyan-300/50 border border-white/20">
-  <span class="text-lg text-black font-poppins">Contato</span>
-  <div
-    class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
-    <div class="relative h-full w-10 bg-black/80"></div>
-  </div>
-</button>
+          class="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-gradient-to-r from-[#007CEF] to-[#54FF65] backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-cyan-300/50 border border-white/20">
+          <span class="text-lg text-black font-poppins">Contato</span>
+          <div
+            class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
+            <div class="relative h-full w-10 bg-black/80"></div>
+          </div>
+        </button>
 
-        <button data-collapse-toggle="navbar-sticky" type="button"
+        <!-- Botão Menu Sanduíche -->
+        <button type="button"
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-sticky" aria-expanded="false">
+          aria-controls="navbar-sticky" aria-expanded="false" aria-label="Toggle navigation"
+          onclick="this.closest('nav').querySelector('#navbar-sticky').classList.toggle('hidden');">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -35,6 +38,8 @@
           </svg>
         </button>
       </div>
+
+      <!-- Menu Itens -->
       <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
         <ul
           class="flex flex-col p-4 md:p-0 mt-4 font-medium  rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
@@ -62,5 +67,3 @@
     </div>
   </div>
 </nav>
-
-
