@@ -1,12 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { LayoutComponent } from "./components/layout/layout.component";
+
 import { initFlowbite } from 'flowbite/lib/esm/components';
+import { NavbarComponent } from "./components/navbar/navbar.component";
+import { ProjetosComponent } from "./components/projetos/projetos.component";
+import { TecnologiasComponent } from "./components/tecnologias/tecnologias.component";
+import { HeroComponent } from "./components/hero/hero.component";
+import { PaginaInicialComponent } from './components/pagina-inicial/pagina-inicial.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, LayoutComponent],
+  imports: [RouterOutlet, PaginaInicialComponent, NavbarComponent, TecnologiasComponent, HeroComponent, ProjetosComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
