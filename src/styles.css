@@ -10,11 +10,12 @@ body{
 
 :root {
   --scrollbar-track-color: rgb(0, 0, 0); /* Fundo totalmente transparente */
-  --scrollbar-thumb-color: cyan; /* Cor do "thumb" */
+  --scrollbar-thumb-color: purple; /* Cor do "thumb" */
 }
 
 ::-webkit-scrollbar {
   width: 10px; /* Largura do scrollbar */
+
 }
 
 ::-webkit-scrollbar-track {
