@@ -11,18 +11,26 @@ import { NavigationEnd, Router, RouterLink } from '@angular/router';
 export class NavbarComponent {
 
 
+  // Flag para indicar se a navegação é inicial
+  private isInitialNavigation = true;
+
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        this.scrollToFooter();
+        // Se a navegação não é inicial, rola para o final
+        if (!this.isInitialNavigation) {
+          this.scrollToFooter();
+        }
+        // Marca a navegação como não inicial
+        this.isInitialNavigation = false;
       }
     });
   }
 
   scrollToFooter() {
-    const footer = document.querySelector('footer'); // Seleciona o elemento footer
+    const footer = document.querySelector('footer');
     if (footer) {
-      footer.scrollIntoView({ behavior: 'smooth' }); // Rola suavemente até o footer
+      footer.scrollIntoView({ behavior: 'smooth' });
     }
   }
 }
