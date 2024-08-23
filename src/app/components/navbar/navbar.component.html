@@ -5,28 +5,26 @@
 
       <!-- Título -->
       <button
-        class="cursor-pointer select-none text-[2rem] font-bold text-slate-100 relative group text-center flex justify-center">
-        <div
-          class="absolute top-[6px] text-cyan-300 transition duration-300 drop-shadow-lg group-hover:drop-shadow-md group-active:drop-shadow-none">
-          Matheus</div>
-        <div class="absolute top-[5px] text-neutral-700"> Matheus</div>
-        <div class="absolute transition duration-300 transform group-hover:translate-y-1 group-active:translate-y-1.5">
-          Matheus</div>
-        <div class="dont-mind-me opacity-0">Matheus</div>
-      </button>
+  class="cursor-pointer select-none text-[2rem] font-bold text-slate-100 relative group text-center flex justify-center items-center">
+  <svg
+    class="mr-2 h-6 w-6 lg:mr-10 lg:mt-5 max-md:mr-3 max-md:mt-0"
+    viewBox="0 0 33 33"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 640 512"
+  >
+    <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f50000" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+  <div class="absolute top-[6px] text-cyan-300 transition duration-300 drop-shadow-lg group-hover:drop-shadow-md group-active:drop-shadow-none">
+    Matheus</div>
+  <div class="absolute top-[5px] text-neutral-700"> Matheus</div>
+  <div class="absolute transition duration-300 transform group-hover:translate-y-1 group-active:translate-y-1.5">
+    Matheus</div>
+  <div class="dont-mind-me opacity-0">Matheus</div>
+</button>
 
       <!-- Botões e Menu -->
       <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <a routerLink="/contato" (click)="scrollToFooter()"
-            class="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-gradient-to-r from-[#007CEF] to-[#54FF65] backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-cyan-300/50 border border-white/20">
-            <span class="text-lg text-black font-poppins">Contato</span>
-            <div
-              class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
-              <div class="relative h-full w-10 bg-black/80"></div>
-            </div>
-          </a>
-        </div>
+
 
         <!-- Botão Menu Sanduíche -->
         <button type="button"
@@ -64,8 +62,14 @@
             <a href="https://github.com/mathrocks19"
               class="block py-2 px-3 text-white md:text-white rounded md:hover:text-cyan-400 md:p-0 md:dark:hover:text-cyan-300 dark:text-white md:dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">GitHub</a>
           </li>
+          <li>
+            <a  routerLink="/contato" (click)="scrollToFooter()"
+              class="block py-2 px-3 text-white md:text-white rounded md:hover:text-cyan-400 md:p-0 md:dark:hover:text-cyan-300 dark:text-white md:dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contato</a>
+          </li>
         </ul>
       </div>
+
+
     </div>
   </div>
 </nav>
