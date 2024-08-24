@@ -15,7 +15,6 @@ export class NavbarComponent {
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        // Se a navegação não é inicial, rola para o final
         if (!this.isInitialNavigation) {
           this.scrollToFooter();
         }
@@ -25,7 +24,7 @@ export class NavbarComponent {
   }
 
   goToHome() {
-    this.router.navigate(['/']); // Navega para a rota raiz (localhost:4200)
+    this.router.navigate(['/']);
   }
 
   scrollToFooter() {
