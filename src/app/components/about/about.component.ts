@@ -9,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
+
+  scrollToFooter() {
+    const footer = document.querySelector('footer');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

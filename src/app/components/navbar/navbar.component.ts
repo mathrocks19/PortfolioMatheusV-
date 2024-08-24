@@ -10,8 +10,6 @@ import { NavigationEnd, Router, RouterLink } from '@angular/router';
 })
 export class NavbarComponent {
 
-
-  // Flag para indicar se a navegação é inicial
   private isInitialNavigation = true;
 
   constructor(private router: Router) {
@@ -21,10 +19,13 @@ export class NavbarComponent {
         if (!this.isInitialNavigation) {
           this.scrollToFooter();
         }
-        // Marca a navegação como não inicial
         this.isInitialNavigation = false;
       }
     });
+  }
+
+  goToHome() {
+    this.router.navigate(['/']); // Navega para a rota raiz (localhost:4200)
   }
 
   scrollToFooter() {
