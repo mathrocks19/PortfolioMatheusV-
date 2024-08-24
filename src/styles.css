@@ -8,6 +8,7 @@ body{
   cursor: url('assets/cursor/cursorps5.cur'), auto;
 }
 
+
 :root {
   --scrollbar-track-color: rgb(0, 0, 0); /* Fundo totalmente transparente */
   --scrollbar-thumb-color: #BA1C24; /* Cor do "thumb" */
