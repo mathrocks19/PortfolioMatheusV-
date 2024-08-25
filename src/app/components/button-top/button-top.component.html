@@ -1,7 +1,17 @@
 <div class="fixed bottom-4 right-4">
-  <button class="cursor-pointer duration-200 hover:scale-125 active:scale-100" title="Go Back" (click)="scrollToTop()">
-    <svg width="60" height="52" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 6L12 19M12 6L16 10M12 6L8 10" stroke="#ffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <span class="flex items-center space-x-4">
+    <button class="cursor-pointer duration-200 hover:scale-125 active:scale-100" title="Go Back" (click)="scrollToTop()">
+      <svg width="60" height="52" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 6L12 19M12 6L16 10M12 6L8 10" stroke="#E91E63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-  </button>
+    </button>
+    <button class="cursor-pointer duration-200 hover:scale-125 active:scale-100" title="Mute" (click)="toggleMute()">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <circle fill="#E91E63" cx="19" cy="33" r="9" />
+          <polygon fill="#E91E63" points="24,6 24,33 28,33 28,14 39,17 39,10 " />
+        </g>
+      </svg>
+    </button>
+  </span>
 </div>
