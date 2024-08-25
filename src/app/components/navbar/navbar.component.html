@@ -1,64 +1,110 @@
-<nav class="fixed top-0 left-0 w-full justify-center z-50 mt-2">
-  <div class="container mx-auto px-4 py-2">
+<nav class="fixed top-0 left-0 w-full justify-center z-50 mt-2 ">
+  <div class="container mx-auto px-4 py-2 md:bg-transparent sm:bg-transparent">
     <div
-      class="flex flex-wrap items-center justify-between p-4  bg-[#05040e]  rounded-2xl  shadow-sm shadow-[#1D0C7F] bottom-5 ">
-      <!-- Título -->
+      class="flex flex-wrap items-center justify-between p-4  lg:bg-[#05040e] md:bg-transparent sm:bg-transparent     rounded-2xl  shadow-sm lg:shadow-[#1D0C7F] bottom-5 ">
       <button
-  class="cursor-pointer select-none text-[2rem] font-bold text-slate-100 relative group text-center flex justify-center items-center"
-  (click)="goToHome()">
-  <svg
-    class="mr-2 h-6 w-6 lg:mr-10 lg:mt-5 max-md:mr-3 max-md:mt-0"
-    viewBox="0 0 33 33"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 640 512"
-  >
-    <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f50000" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
-  <div class="absolute top-[6px] text-cyan-300 transition duration-300 drop-shadow-lg group-hover:drop-shadow-md group-active:drop-shadow-none">
-    Matheus</div>
-  <div class="absolute top-[5px] text-neutral-700"> Matheus</div>
-  <div class="absolute transition duration-300 transform group-hover:translate-y-1 group-active:translate-y-1.5">
-    Matheus</div>
-  <div class="dont-mind-me opacity-0">Matheus</div>
-</button>
-      <!-- Botões e Menu -->
-      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <!-- Botão Menu Sanduíche -->
-        <button type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-sticky" aria-expanded="false" aria-label="Toggle navigation"
-          onclick="this.closest('nav').querySelector('#navbar-sticky').classList.toggle('hidden');">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15" />
-          </svg>
-        </button>
-      </div>
-      <!-- Menu Itens -->
-      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        class="cursor-pointer select-none text-[2rem] font-bold text-slate-100 relative group text-center flex justify-center items-center "
+        (click)="goToHome()">
+        <svg class="mr-10 h-6 w-6 lg:mr-10 lg:mt-5 max-md:mr-3 max-md:mt-0" viewBox="0 0 33 33" fill="none"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+          <path fill="#f50000"
+            d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z" />
+        </svg>
+        <div
+          class=" absolute top-[6px] text-cyan-300 transition duration-300 drop-shadow-lg group-hover:drop-shadow-md group-active:drop-shadow-none ">
+          Matheus</div>
+        <div class="absolute top-[5px] text-neutral-700"> Matheus</div>
+        <div class="absolute transition duration-300 transform group-hover:translate-y-1 group-active:translate-y-1.5">
+          Matheus</div>
+        <div class="dont-mind-me opacity-0">Matheus</div>
+      </button>
+      <!-- Menu Desktop -->
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="desktop-menu">
         <ul
           class="flex flex-col p-4 md:p-0 mt-4 font-medium  rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-
           <li>
-            <a  routerLink="/about"
+            <a routerLink="/about"
               class="block py-2 px-3 text-white md:text-white rounded md:hover:text-cyan-400 md:p-0 md:dark:hover:text-cyan-300 dark:text-white md:dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Sobre</a>
           </li>
           <li>
             <a routerLink="/projetos"
-               class="block py-2 px-3 text-white md:text-white rounded md:hover:text-cyan-400 md:p-0 md:dark:hover:text-cyan-300 dark:text-white md:dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+              class="block py-2 px-3 text-white md:text-white rounded md:hover:text-cyan-400 md:p-0 md:dark:hover:text-cyan-300 dark:text-white md:dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
               Projetos
             </a>
           </li>
           <li>
-            <a href="https://github.com/mathrocks19"  target="_blank"
+            <a href="https://github.com/mathrocks19" target="_blank"
               class="block py-2 px-3 text-white md:text-white rounded md:hover:text-cyan-400 md:p-0 md:dark:hover:text-cyan-300 dark:text-white md:dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">GitHub</a>
           </li>
           <li>
-            <a  routerLink="/contato" (click)="scrollToFooter()"
+            <a routerLink="/contato" (click)="scrollToFooter()"
               class="block py-2 px-3 text-white md:text-white rounded md:hover:text-cyan-400 md:p-0 md:dark:hover:text-cyan-300 dark:text-white md:dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contato</a>
           </li>
         </ul>
+      </div>
+      <!-- Menu Mobile -->
+      <div class="mobile-nav fixed bottom-0 left-0 w-full z-50 bg-[#0e0929] lg:hidden xl:hidden 2xl:hidden">
+        <div class="border border-gray-300 py-3 flex justify-between shadow-xl rounded-md">
+          <div class="group relative px-4 cursor-pointer">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500">
+              <a [routerLink]="'/about'" class="w-full h-full">
+                <input class="hidden peer/expand" type="radio" name="path" id="profile" />
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15 9H18M15 12H18M15 15H18M12 16C11.6936 15.3871 11.0672 15 10.382 15H7.61803C6.93283 15 6.30643 15.3871 6 16M4 5H20C20.5523 5 21 5.44772 21 6V18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18V6C3 5.44772 3.44772 5 4 5ZM11 10C11 11.1046 10.1046 12 9 12C7.89543 12 7 11.1046 7 10C7 8.89543 7.89543 8 9 8C10.1046 8 11 8.89543 11 10Z"
+                    stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="group relative px-4 cursor-pointer">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500">
+              <a [routerLink]="'/projetos'" class="w-full h-full">
+                <input class="hidden peer/expand" type="radio" name="path" id="dashboard" />
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.143 4H4.857C4.38369 4 4 4.38369 4 4.857V9.143C4 9.61631 4.38369 10 4.857 10H9.143C9.61631 10 10 9.61631 10 9.143V4.857C10 4.38369 9.61631 4 9.143 4Z"
+                    stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M19.143 4H14.857C14.3837 4 14 4.38369 14 4.857V9.143C14 9.61631 14.3837 10 14.857 10H19.143C19.6163 10 20 9.61631 20 9.143V4.857C20 4.38369 19.6163 4 19.143 4Z"
+                    stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M9.143 14H4.857C4.38369 14 4 14.3837 4 14.857V19.143C4 19.6163 4.38369 20 4.857 20H9.143C9.61631 20 10 19.6163 10 19.143V14.857C10 14.3837 9.61631 14 9.143 14Z"
+                    stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M19.143 14H14.857C14.3837 14 14 14.3837 14 14.857V19.143C14 19.6163 14.3837 20 14.857 20H19.143C19.6163 20 20 19.6163 20 19.143V14.857C20 14.3837 19.6163 14 19.143 14Z"
+                    stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="group relative px-4 cursor-pointer">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500">
+              <a href="https://github.com/mathrocks19" target="_blank" class="w-full h-full">
+                <input class="hidden peer/expand" type="radio" name="path" id="help" />
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0061 2.00001C9.63078 1.99737 7.3322 2.86251 5.52229 4.44037C3.71237 6.01823 2.50942 8.20566 2.12903 10.6107C1.74863 13.0157 2.21566 15.481 3.4464 17.5649C4.67715 19.6488 6.59116 21.215 8.84543 21.9828C9.34968 22.0779 9.52919 21.7604 9.52919 21.4893C9.52919 21.2442 9.51911 20.4373 9.51507 19.5807C6.73463 20.2014 6.1487 18.3714 6.1487 18.3714C5.96519 17.7515 5.57175 17.2191 5.03935 16.8704C4.13169 16.2342 5.10893 16.2498 5.10893 16.2498C5.42582 16.2945 5.72855 16.413 5.99404 16.596C6.25952 16.7791 6.48075 17.0219 6.64084 17.3059C6.77627 17.5588 6.95922 17.7816 7.17911 17.9615C7.39901 18.1414 7.6515 18.2748 7.92197 18.354C8.19244 18.4331 8.47552 18.4565 8.75486 18.4228C9.03419 18.389 9.30423 18.2988 9.54936 18.1573C9.59395 17.6372 9.81905 17.1509 10.1837 16.7866C7.96501 16.528 5.63033 15.6487 5.63033 11.7178C5.61654 10.6991 5.98563 9.71409 6.66101 8.96713C6.35487 8.08315 6.38913 7.11266 6.75682 6.25373C6.75682 6.25373 7.59589 5.97856 9.506 7.30474C11.144 6.84545 12.8722 6.84545 14.5102 7.30474C16.4162 5.97856 17.2503 6.25373 17.2503 6.25373C17.6195 7.11202 17.6556 8.08248 17.3511 8.96713C18.0262 9.71412 18.3946 10.6993 18.3798 11.7178C18.3798 15.656 16.0411 16.5218 13.8163 16.7753C14.0545 17.0238 14.2383 17.3216 14.3553 17.6487C14.4724 17.9759 14.52 18.3249 14.495 18.6725C14.495 20.0442 14.4829 21.149 14.4829 21.4862C14.4829 21.7583 14.6635 22.0779 15.1697 21.9776C17.4205 21.2069 19.3306 19.6399 20.5582 17.557C21.7859 15.4742 22.2511 13.0112 21.8707 10.6087C21.4902 8.20625 20.2889 6.02097 18.4816 4.44377C16.6743 2.86657 14.3789 2.00033 12.0061 2.00001Z"
+                    fill="#fff" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="group relative px-4 cursor-pointer">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500">
+              <a [routerLink]="'/contato'" (click)="scrollToFooter()" class="w-full h-full">
+                <input class="hidden peer/expand" type="radio" name="path" id="profile" />
+                <svg
+                  class="peer-hover/expand:scale-125 peer-hover/expand:text-blue-400 peer-hover/expand:fill-blue-400 peer-checked/expand:text-blue-400 peer-checked/expand:fill-blue-400 text-2xl peer-checked/expand:scale-125 ease-in-out duration-300"
+                  xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#fff">
+                  <path
+                    d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

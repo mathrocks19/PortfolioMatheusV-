@@ -40,4 +40,13 @@ export class NavbarComponent {
       behavior: 'smooth'
     });
   }
+
+  toggleMobileMenu() {
+    const mobileMenu = document.querySelector('.mobile-nav');
+    if (mobileMenu) {
+      mobileMenu.classList.toggle('active');
+    }
+  }
+
+
 }

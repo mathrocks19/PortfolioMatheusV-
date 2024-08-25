@@ -8,14 +8,13 @@ body{
   cursor: url('assets/cursor/cursorps5.cur'), auto;
 }
 
-
 :root {
-  --scrollbar-track-color: rgb(0, 0, 0); /* Fundo totalmente transparente */
-  --scrollbar-thumb-color: #BA1C24; /* Cor do "thumb" */
+  --scrollbar-track-color: rgb(0, 0, 0);
+  --scrollbar-thumb-color: #BA1C24;
 }
 
 ::-webkit-scrollbar {
-  width: 10px; /* Largura do scrollbar */
+  width: 10px;
 
 }
 
